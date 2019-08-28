@@ -3,6 +3,7 @@
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
   <body>
     <div id="console"> </div>
@@ -14,6 +15,13 @@
     <!-- Add Video access -->
 
     <video autoplay playsinline muted id="webcam" width="300" height="300"> </video>
+
+
+    <!-- Add buttons for training images in A,B,C arrays -->
+
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
 
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
